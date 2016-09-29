@@ -11,4 +11,15 @@
     </Command>
     <PhraseTopic Label="apiName" Scenario="Dictation"></PhraseTopic>
   </CommandSet>
+    <CommandSet xml:lang="en-gb" Name="RJS">
+    <CommandPrefix>RJSo</CommandPrefix>
+    <Example>RJS show camera api</Example>
+    <Command Name="API">
+      <Example>show {message} using rjs</Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">Please show {apiName}</ListenFor>
+      <Feedback>showing you {apiName} with RJS</Feedback>
+      <Navigate Target="/showAPI.htm"/>
+    </Command>
+    <PhraseTopic Label="apiName" Scenario="Dictation"></PhraseTopic>
+  </CommandSet>
 </VoiceCommands>
